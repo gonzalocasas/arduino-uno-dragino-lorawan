@@ -52,7 +52,7 @@ We'll be using command-line instructions, but the web-based options should be se
 
 ## Code
 
-We're finaly ready to start coding on our Arduino UNO:
+We're finally ready to start coding on our Arduino UNO:
 
 - Connect the Arduino to your computer using the USB cable
 - Select your Arduino board: go to `Tools` -> `Board: ...` and select the one matching your board, e.g. `Arduino/Genuino Uno`.
@@ -60,7 +60,7 @@ We're finaly ready to start coding on our Arduino UNO:
 - Open the `hello-world` example contained in this repository.
 - Remember the keys you wrote down on while setting up your TTN account? Now is the time to use them! Notice that `ttnctl` outputs `DevAddr` without the `0x` prefix, but you must add it for it to work.
 - Upload and test it! :+1:
-- You can see the detail immediately flowing if you're logged in to the web-ui (TTN dashboard) is simple, just open the dashboard, open your application and see the messages flowing in
-- Or use the command line to using the command-line tool is also simple, just run the following:
+- You can see the data flowing in on the web-ui (TTN dashboard) immediately: just open the dashboard, open your application and see the messages from your node.
+- Alternatively, use the command line to subscribe to messages:
 
         $ ./ttnctl subscribe
