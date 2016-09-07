@@ -59,9 +59,8 @@ We're finaly ready to start coding on our Arduino UNO:
 - Select the port: go to `Tools` -> `Port: ...` and select the one where your board shows up, e.g. `/dev/cu.usbmodem1431 (Arduino/Genuino Uno)`.
 - Open the `hello-world` example contained in this repository.
 - Remember the keys you wrote down on while setting up your TTN account? Now is the time to use them! Notice that `ttnctl` outputs `DevAddr` without the `0x` prefix, but you must add it for it to work.
-- Upload and test it!
-- There are many ways to see if the data is reaching TTN:
-  - using the web-ui (TTN dashboard) is simple, just open the dashboard, open your application and see the messages flowing in
-  - using the command-line tool is also simple, just run the following:
+- Upload and test it! :+1:
+- You can see the detail immediately flowing if you're logged in to the web-ui (TTN dashboard) is simple, just open the dashboard, open your application and see the messages flowing in
+- Or use the command line to using the command-line tool is also simple, just run the following:
 
         $ ./ttnctl subscribe
