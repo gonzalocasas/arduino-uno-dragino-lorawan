@@ -88,21 +88,12 @@ void setup() {
     // Reset the MAC state. Session and pending data transfers will be discarded.
     LMIC_reset();
 
-    // Set static session parameters. Instead of dynamically establishing a session
-    // by joining the network, precomputed session parameters are be provided.
-    #ifdef PROGMEM
-    // On AVR, these values are stored in flash and only copied to RAM
-    // once. Copy them to a temporary buffer here, LMIC_setSession will
-    // copy them into a buffer of its own again.
+    // Set static session parameters.
     uint8_t appskey[sizeof(APPSKEY)];
     uint8_t nwkskey[sizeof(NWKSKEY)];
     memcpy_P(appskey, APPSKEY, sizeof(APPSKEY));
     memcpy_P(nwkskey, NWKSKEY, sizeof(NWKSKEY));
     LMIC_setSession (0x1, DEVADDR, nwkskey, appskey);
-    #else
-    // If not running an AVR with PROGMEM, just use the arrays directly
-    LMIC_setSession (0x1, DEVADDR, NWKSKEY, APPSKEY);
-    #endif
 
     #if defined(CFG_eu868)
     // Set up the channels used by the Things Network, which corresponds
