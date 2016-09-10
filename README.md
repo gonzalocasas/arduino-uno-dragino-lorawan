@@ -9,7 +9,8 @@
   - Jumpers `J_DIO1` and `J_DIO2`: closed
   - Jumpers `J_DIO5`: open
 
-This is how the jumpers should look like:
+This is how it should look like:
+
 ![Dragino Shield](images/dragino_shield.jpg)
 
 ## Setup your account on The Things Network
