@@ -60,7 +60,7 @@ We're finally ready to start coding on our Arduino UNO:
 - Connect the Arduino to your computer using the USB cable
 - Select your Arduino board: go to `Tools` -> `Board: ...` and select the one matching your board, e.g. `Arduino/Genuino Uno`.
 - Select the port: go to `Tools` -> `Port: ...` and select the one where your board shows up, e.g. `/dev/cu.usbmodem1431 (Arduino/Genuino Uno)`.
-- Open the `hello-world` example contained in this repository.
+- Open the `hello-world` example contained in this repository ([link](hello-world/hello-world.ino)).
 - Remember the keys you wrote down on while setting up your TTN account? Now is the time to use them! Notice that `ttnctl` outputs `DevAddr` without the `0x` prefix, but you must add it for it to work.
 - Upload and test it! :+1:
 - You can see the data flowing in on the web-ui (TTN dashboard) immediately: just open the dashboard, open your application and see the messages from your node.
