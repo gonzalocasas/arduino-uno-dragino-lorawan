@@ -37,22 +37,10 @@ const lmic_pinmap lmic_pins = {
 };
 
 void onEvent (ev_t ev) {
-    switch(ev) {
-        case EV_TXCOMPLETE:
-            Serial.println(F("EV_TXCOMPLETE (includes waiting for RX windows)"));
-            if (LMIC.txrxFlags & TXRX_ACK)
-              Serial.println(F("Received ACK"));
-            if (LMIC.dataLen) {
-              Serial.println(F("Received downlink with"));
-              Serial.println(LMIC.dataLen);
-              Serial.println(F(" bytes of payload"));
-            }
-            // Schedule next transmission
-            os_setTimedCallback(&sendjob, os_getTime()+sec2osticks(TX_INTERVAL), do_send);
-            break;
-         default:
-            Serial.println(F("Unknown event"));
-            break;
+    if (ev == EV_TXCOMPLETE) {
+        Serial.println(F("EV_TXCOMPLETE (includes waiting for RX windows)"));
+        // Schedule next transmission
+        os_setTimedCallback(&sendjob, os_getTime()+sec2osticks(TX_INTERVAL), do_send);
     }
 }
 
