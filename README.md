@@ -72,5 +72,5 @@ We're finally ready to start coding on our Arduino UNO:
 
 Start exploring the possibilities with the following code examples:
 
-  - `hello-world`: the canonical example to get started. [Link](hello-world/hello-world.ino)
-  - `send-sensor-data`: a simple example to send a single integer value from analog pins. [Link](send-sensor-data/send-sensor-data.ino)
+  - [hello-world](hello-world/hello-world.ino): the canonical example to get started. 
+  - [send-sensor-data](send-sensor-data/send-sensor-data.ino): a simple example to send a single integer value from analog pins.
