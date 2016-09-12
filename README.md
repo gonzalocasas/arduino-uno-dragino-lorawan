@@ -1,9 +1,5 @@
 # Arduino UNO + Dragino LoRa Shield v1.3
 
-## Shopping list
-
-You will need 
-- https://www.seeedstudio.com/Dragino-LoRa-Shield-support-868M-frequency-p-2651.html
 ## Prepare your hardware
 
 - Plug dragino shield onto your Arduino
