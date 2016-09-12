@@ -58,7 +58,7 @@ void onEvent (ev_t ev) {
 
 void do_send(osjob_t* j){
     // Payload to send (uplink)
-    static uint8_t mydata[] = "hi";
+    static uint8_t message[] = "hi";
 
     // Check if there is not a current TX/RX job running
     if (LMIC.opmode & OP_TXRXPEND) {
