@@ -1,5 +1,9 @@
 # Arduino UNO + Dragino LoRa Shield v1.3
 
+## Shopping list
+
+You will need 
+- https://www.seeedstudio.com/Dragino-LoRa-Shield-support-868M-frequency-p-2651.html
 ## Prepare your hardware
 
 - Plug dragino shield onto your Arduino
@@ -67,3 +71,10 @@ We're finally ready to start coding on our Arduino UNO:
 - Alternatively, use the command line to subscribe to messages:
 
         $ ./ttnctl subscribe
+
+## Other examples
+
+Start exploring the possibilities with the following code examples:
+
+  - `hello-world`: the canonical example to get started. [Link](hello-world/hello-world.ino)
+  
