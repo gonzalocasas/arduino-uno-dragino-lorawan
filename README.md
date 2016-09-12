@@ -74,3 +74,4 @@ Start exploring the possibilities with the following code examples:
 
   - [hello-world](hello-world/hello-world.ino): the canonical example to get started. 
   - [send-sensor-data](send-sensor-data/send-sensor-data.ino): a simple example to send a single integer value from analog pins.
+  - [controlling-arduino](controlling-arduino/controlling-arduino.ino): example using downlink messages to actuate your Arduino.
