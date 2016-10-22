@@ -41,7 +41,7 @@ We'll be using command-line instructions, but the web-based options should be se
 
 - Register a new device. We use ABP (activation by personalization) and a flag (`--relax-fcnt`) to make development easier:
 
-        $ ./ttnctl help devices register personalized
+        $ ./ttnctl devices register personalized
 
 - Write down the `DevAddr`, `AppSKey`, and `NwkSKey` that are returned by the previous command, because you will need them in the next step (you can always query those later as well).
 
