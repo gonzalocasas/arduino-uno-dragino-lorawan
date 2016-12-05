@@ -1,5 +1,7 @@
 # Arduino UNO + Dragino LoRa Shield v1.3
 
+This code samples were part of a more comprehensive workshop presented by [@tamberg](https://github.com/tamberg) and me. The complete [slides are available here](http://www.tamberg.org/chopen/2016/LoRaWANIoTWorkshop.pdf).
+
 ## Prepare your hardware
 
 - Plug dragino shield onto your Arduino
